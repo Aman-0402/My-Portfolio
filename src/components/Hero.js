@@ -130,7 +130,7 @@ function Hero() {
           </svg>
         </a>
         <a 
-          href="https://linkedin.com/in/amanraj" 
+          href="https://www.linkedin.com/in/aman-raj-081905211/" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="LinkedIn Profile"
@@ -140,7 +140,7 @@ function Hero() {
           </svg>
         </a>
         <a 
-          href="https://twitter.com/amanraj" 
+          href="https://twitter.com/Code_Like_Aman" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Twitter Profile"
@@ -150,8 +150,8 @@ function Hero() {
           </svg>
         </a>
         <a 
-          href="mailto:aman@example.com" 
-          aria-label="Email"
+          href="mailto:think.like.ai.aman@gmail.com" 
+          aria-label="Gmail"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>

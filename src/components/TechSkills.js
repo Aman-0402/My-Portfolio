@@ -31,7 +31,7 @@ function TechSkills() {
         { name: 'CodeIgniter', image: 'CodeIgniter.png' },
         { name: 'PHP', image: 'PHP.png' },
         { name: 'Java', image: 'Java.png' },
-        { name: 'C#', image: 'C#.png' }
+        { name: 'C#', image: 'CSharp.png' }
       ]
     },
     {
@@ -39,7 +39,7 @@ function TechSkills() {
       icon: '🗄️',
       skills: [
         { name: 'MySQL', image: 'MySQL.png' },
-        { name: 'PostgreSQL', image: 'PostgreSQL.png' },
+        { name: 'PostgreSQL', image: 'PostgresSQL.png' },
         { name: 'MongoDB', image: 'mongodb.png' },
         { name: 'SQLite', image: 'SQLite.png' }
       ]
@@ -93,7 +93,7 @@ function TechSkills() {
         { name: 'JavaScript', image: 'JavaScript.png' },
         { name: 'TypeScript', image: 'TypeScript.png' },
         { name: 'PHP', image: 'PHP.png' },
-        { name: 'C#', image: 'C#.png' }
+        { name: 'C#', image: 'CSharp.png' }
       ]
     }
   ];

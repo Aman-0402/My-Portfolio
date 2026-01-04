@@ -56,7 +56,9 @@ function Contact() {
               </div>
               <div>
                 <h4>Email</h4>
-                <p>think.like.ai.aman@gmail.com</p>
+                <a href="mailto:think.like.ai.aman@gmail.com" style={{color: 'var(--text-secondary)', textDecoration: 'none'}}>
+                  think.like.ai.aman@gmail.com
+                </a>
               </div>
             </div>
 
@@ -68,7 +70,9 @@ function Contact() {
               </div>
               <div>
                 <h4>Phone</h4>
-                <p>+91 9852104967</p>
+                <a href="tel:+919852104967" style={{color: 'var(--text-secondary)', textDecoration: 'none'}}>
+                  +91 9852104967
+                </a>
               </div>
             </div>
 

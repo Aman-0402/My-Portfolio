@@ -58,8 +58,10 @@ function Hero() {
         </h1>
         <h2 className="hero-subtitle">Full Stack Developer | AI/ML Enthusiast | Trainer</h2>
         <p className="hero-description">
-          I create beautiful and functional web experiences. 
-          Passionate about crafting elegant solutions to complex problems.
+          I craft elegant, scalable web applications that solve real-world problems. 
+          With expertise in modern web technologies and machine learning, I bridge the gap 
+          between beautiful design and robust functionality. Passionate about mentoring and 
+          building innovative solutions that make an impact.
         </p>
         <div className="hero-buttons">
           <a href="#projects" className="btn" onClick={(e) => smoothScroll(e, '#projects')}>

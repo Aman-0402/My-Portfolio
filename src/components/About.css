@@ -1,5 +1,6 @@
 .about {
-  background-color: var(--light-bg);
+  background: transparent;
+  position: relative;
 }
 
 .about-content {
@@ -9,11 +10,29 @@
   margin-bottom: 60px;
 }
 
+.about-text {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
 .about-text p {
   margin-bottom: 20px;
   color: var(--text-secondary);
   font-size: 1.1rem;
   line-height: 1.8;
+}
+
+.skills-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .skills-container h3 {
@@ -51,9 +70,10 @@
 .skill-bar {
   width: 100%;
   height: 10px;
-  background-color: rgba(99, 102, 241, 0.1);
+  background-color: rgba(99, 102, 241, 0.15);
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .skill-progress {
@@ -62,6 +82,7 @@
   border-radius: 10px;
   transition: width 1s ease-out;
   animation: fillSkill 1.5s ease-out;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
 @keyframes fillSkill {
@@ -80,13 +101,19 @@
 .stat-item {
   text-align: center;
   padding: 30px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .stat-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
 }
 
 .stat-item h3 {
@@ -96,6 +123,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .stat-item p {
@@ -109,6 +137,11 @@
     gap: 40px;
   }
 
+  .about-text,
+  .skills-container {
+    padding: 30px;
+  }
+
   .stats {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -116,8 +149,17 @@
 }
 
 @media (max-width: 480px) {
+  .about-text,
+  .skills-container {
+    padding: 25px;
+  }
+
   .stats {
     grid-template-columns: 1fr;
+  }
+
+  .stat-item {
+    padding: 25px;
   }
 
   .stat-item h3 {

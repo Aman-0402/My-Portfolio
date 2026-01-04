@@ -4,11 +4,12 @@ import './About.css';
 function About() {
   const skills = [
     { name: 'React', level: 90 },
-    { name: 'JavaScript', level: 85 },
-    { name: 'HTML/CSS', level: 95 },
-    { name: 'Node.js', level: 80 },
-    { name: 'Python', level: 75 },
-    { name: 'Git', level: 85 }
+    { name: 'JavaScript', level: 90 },
+    { name: 'HTML/CSS', level: 100 },
+    { name: 'Django', level: 80 },
+    { name: 'Python', level: 100 },
+    { name: 'Git', level: 100 },
+    { name: 'Flask', level: 100 }
   ];
 
   return (
@@ -18,19 +19,20 @@ function About() {
       <div className="about-content">
         <div className="about-text">
           <p>
-            I'm a passionate full-stack developer with a love for creating 
-            beautiful, functional, and user-friendly websites and applications. 
-            With several years of experience in web development, I specialize 
-            in building modern web applications using the latest technologies.
+            I'm a passionate full-stack developer dedicated to crafting elegant, 
+            scalable solutions that solve real-world problems. With extensive experience 
+            in modern web technologies, I specialize in building responsive applications 
+            that blend intuitive design with robust functionality.
           </p>
           <p>
-            When I'm not coding, you can find me exploring new technologies, 
-            contributing to open-source projects, or sharing my knowledge 
-            through blog posts and tutorials.
+            My journey in tech is driven by curiosity and a commitment to continuous learning. 
+            I thrive in collaborative environments where innovation meets best practices, 
+            whether that's architecting complex systems or mentoring junior developers.
           </p>
           <p>
-            I believe in writing clean, maintainable code and following best 
-            practices to deliver high-quality solutions that make a difference.
+            Beyond code, I'm passionate about open-source contributions, technical writing, 
+            and sharing knowledge with the developer community. I believe great software is 
+            built on clean code, thoughtful architecture, and a deep understanding of user needs.
           </p>
         </div>
 
@@ -57,7 +59,7 @@ function About() {
 
       <div className="stats">
         <div className="stat-item">
-          <h3>50+</h3>
+          <h3>30+</h3>
           <p>Projects Completed</p>
         </div>
         <div className="stat-item">
@@ -65,7 +67,7 @@ function About() {
           <p>Years Experience</p>
         </div>
         <div className="stat-item">
-          <h3>30+</h3>
+          <h3>10+</h3>
           <p>Happy Clients</p>
         </div>
         <div className="stat-item">

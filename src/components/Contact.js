@@ -56,7 +56,7 @@ function Contact() {
               </div>
               <div>
                 <h4>Email</h4>
-                <p>your.email@example.com</p>
+                <p>think.like.ai.aman@gmail.com</p>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ function Contact() {
               </div>
               <div>
                 <h4>Phone</h4>
-                <p>+1 (555) 123-4567</p>
+                <p>+91 9852104967</p>
               </div>
             </div>
 
@@ -81,7 +81,7 @@ function Contact() {
               </div>
               <div>
                 <h4>Location</h4>
-                <p>Your City, Country</p>
+                <p>Bangalore, India</p>
               </div>
             </div>
           </div>

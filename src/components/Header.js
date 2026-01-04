@@ -18,6 +18,30 @@ function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen && !event.target.closest('.nav') && !event.target.closest('.hamburger')) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMobileMenuOpen]);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-content">
@@ -34,7 +58,10 @@ function Header() {
           <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
         </nav>
 
-        <div className="hamburger" onClick={toggleMobileMenu}>
+        <div 
+          className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`} 
+          onClick={toggleMobileMenu}
+        >
           <span></span>
           <span></span>
           <span></span>

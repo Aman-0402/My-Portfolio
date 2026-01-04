@@ -120,7 +120,7 @@ function Hero() {
       {/* Social Links */}
       <div className="hero-social">
         <a 
-          href="https://github.com/amanraj" 
+          href="https://github.com/aman-0402" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="GitHub Profile"

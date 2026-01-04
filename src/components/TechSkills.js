@@ -4,73 +4,143 @@ import './TechSkills.css';
 function TechSkills() {
   const skillCategories = [
     {
-      category: 'Frontend',
+      category: 'Frontend Development',
+      icon: '🧑‍💻',
       skills: [
-        { name: 'React', level: 'Expert', icon: '⚛️' },
-        { name: 'JavaScript', level: 'Expert', icon: '🟨' },
-        { name: 'HTML5', level: 'Expert', icon: '🌐' },
-        { name: 'CSS3', level: 'Expert', icon: '🎨' },
-        { name: 'TypeScript', level: 'Advanced', icon: '📘' },
-        { name: 'Tailwind CSS', level: 'Advanced', icon: '💨' }
+        { name: 'HTML', image: 'html.png' },
+        { name: 'CSS', image: 'css.png' },
+        { name: 'JavaScript', image: 'JavaScript.png' },
+        { name: 'TypeScript', image: 'TypeScript.png' },
+        { name: 'Bootstrap', image: 'Bootstrap.png' },
+        { name: 'Tailwind CSS', image: 'Tailwind.png' },
+        { name: 'React', image: 'react.png' },
+        { name: 'Angular', image: 'Angular.png' },
+        { name: 'Next.js', image: 'Nextjs.png' },
+        { name: 'jQuery', image: 'JQuery.png' }
       ]
     },
     {
-      category: 'Backend',
+      category: 'Backend Development',
+      icon: '🧠',
       skills: [
-        { name: 'Node.js', level: 'Advanced', icon: '🟢' },
-        { name: 'Express', level: 'Advanced', icon: '⚡' },
-        { name: 'Python', level: 'Intermediate', icon: '🐍' },
-        { name: 'MongoDB', level: 'Advanced', icon: '🍃' },
-        { name: 'PostgreSQL', level: 'Intermediate', icon: '🐘' },
-        { name: 'REST API', level: 'Expert', icon: '🔌' }
+        { name: 'Node.js', image: 'node.png' },
+        { name: 'Express.js', image: 'express.png' },
+        { name: 'Django', image: 'Django.png' },
+        { name: 'Flask', image: 'Flask.png' },
+        { name: 'FastAPI', image: 'FastAPI.png' },
+        { name: 'CodeIgniter', image: 'CodeIgniter.png' },
+        { name: 'PHP', image: 'PHP.png' },
+        { name: 'Java', image: 'Java.png' },
+        { name: 'C#', image: 'C#.png' }
       ]
     },
     {
-      category: 'Tools & Other',
+      category: 'Databases',
+      icon: '🗄️',
       skills: [
-        { name: 'Git', level: 'Expert', icon: '📦' },
-        { name: 'Docker', level: 'Intermediate', icon: '🐳' },
-        { name: 'AWS', level: 'Intermediate', icon: '☁️' },
-        { name: 'Firebase', level: 'Advanced', icon: '🔥' },
-        { name: 'Figma', level: 'Advanced', icon: '🎯' },
-        { name: 'VS Code', level: 'Expert', icon: '💻' }
+        { name: 'MySQL', image: 'MySQL.png' },
+        { name: 'PostgreSQL', image: 'PostgreSQL.png' },
+        { name: 'MongoDB', image: 'mongodb.png' },
+        { name: 'SQLite', image: 'SQLite.png' }
+      ]
+    },
+    {
+      category: 'Data Science & Machine Learning',
+      icon: '🤖',
+      skills: [
+        { name: 'Python', image: 'Python.png' },
+        { name: 'NumPy', image: 'NumPy.png' },
+        { name: 'Pandas', image: 'Pandas.png' },
+        { name: 'Matplotlib', image: 'Matplotlib.png' },
+        { name: 'Scikit-learn', image: 'sklearn.png' },
+        { name: 'TensorFlow', image: 'TensorFlow.png' }
+      ]
+    },
+    {
+      category: 'Developer Tools & Platforms',
+      icon: '🧰',
+      skills: [
+        { name: 'Git', image: 'Git.png' },
+        { name: 'GitHub', image: 'GitHub.png' },
+        { name: 'VS Code', image: 'vscode.png' },
+        { name: 'Postman', image: 'Postman.png' },
+        { name: 'PowerShell', image: 'Powershell.png' }
+      ]
+    },
+    {
+      category: 'UI / Design',
+      icon: '🎨',
+      skills: [
+        { name: 'Figma', image: 'figma.png' },
+        { name: 'Canva', image: 'Canva.png' }
+      ]
+    },
+    {
+      category: 'Cloud & Networking',
+      icon: '☁️',
+      skills: [
+        { name: 'AWS', image: 'AWS.png' },
+        { name: 'Cisco', image: 'cisco.png' }
+      ]
+    },
+    {
+      category: 'Programming Languages',
+      icon: '🧪',
+      skills: [
+        { name: 'C', image: 'C.png' },
+        { name: 'Java', image: 'Java.png' },
+        { name: 'Python', image: 'Python.png' },
+        { name: 'JavaScript', image: 'JavaScript.png' },
+        { name: 'TypeScript', image: 'TypeScript.png' },
+        { name: 'PHP', image: 'PHP.png' },
+        { name: 'C#', image: 'C#.png' }
       ]
     }
   ];
 
-  const getLevelColor = (level) => {
-    switch(level) {
-      case 'Expert':
-        return '#10b981';
-      case 'Advanced':
-        return '#6366f1';
-      case 'Intermediate':
-        return '#f59e0b';
-      default:
-        return '#6b7280';
-    }
-  };
-
   return (
     <section id="tech-skills" className="tech-skills">
-      <h2>Tech Skills</h2>
+      <div className="section-header">
+        <h2 className="section-title">Tech Skills</h2>
+        <div className="section-decoration">
+          <span className="decoration-dot"></span>
+          <span className="decoration-line"></span>
+          <span className="decoration-dot"></span>
+        </div>
+      </div>
       
       <div className="skills-categories">
         {skillCategories.map((category, idx) => (
-          <div key={idx} className="skill-category">
-            <h3>{category.category}</h3>
+          <div key={idx} className="skill-category" style={{ animationDelay: `${idx * 0.1}s` }}>
+            <h3 className="category-title">
+              <span className="category-icon">{category.icon}</span>
+              {category.category}
+            </h3>
             <div className="skills-grid">
               {category.skills.map((skill, index) => (
-                <div key={index} className="skill-card">
-                  <div className="skill-icon">{skill.icon}</div>
-                  <div className="skill-info">
-                    <h4>{skill.name}</h4>
-                    <span 
-                      className="skill-level" 
-                      style={{ color: getLevelColor(skill.level) }}
-                    >
-                      {skill.level}
-                    </span>
+                <div 
+                  key={index} 
+                  className="skill-card"
+                  style={{ animationDelay: `${(idx * 0.1) + (index * 0.05)}s` }}
+                >
+                  <div className="skill-image-wrapper">
+                    <img 
+                      src={process.env.PUBLIC_URL + '/images/skills/' + skill.image} 
+                      alt={skill.name}
+                      className="skill-image"
+                      onLoad={() => console.log(`Loaded: ${skill.name}`)}
+                      onError={(e) => {
+                        console.log(`Failed to load: ${skill.name} - ${skill.image}`);
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="skill-fallback" style={{ display: 'none' }}>
+                      {skill.name.charAt(0)}
+                    </div>
+                  </div>
+                  <div className="skill-name">
+                    <span>{skill.name}</span>
                   </div>
                 </div>
               ))}
@@ -80,20 +150,23 @@ function TechSkills() {
       </div>
 
       <div className="tech-stack-summary">
-        <h3>Tech Stack Overview</h3>
-        <div className="tech-badges">
-          <span className="tech-badge">React</span>
-          <span className="tech-badge">Node.js</span>
-          <span className="tech-badge">MongoDB</span>
-          <span className="tech-badge">Express</span>
-          <span className="tech-badge">JavaScript</span>
-          <span className="tech-badge">TypeScript</span>
-          <span className="tech-badge">Git</span>
-          <span className="tech-badge">Docker</span>
-          <span className="tech-badge">AWS</span>
-          <span className="tech-badge">Tailwind CSS</span>
-          <span className="tech-badge">PostgreSQL</span>
-          <span className="tech-badge">Firebase</span>
+        <h3>Full Stack Expertise</h3>
+        <p className="stack-description">
+          Proficient in modern web technologies, cloud platforms, and data science tools
+        </p>
+        <div className="stats-grid">
+          <div className="stat-item">
+            <div className="stat-number">40+</div>
+            <div className="stat-label">Technologies</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">8</div>
+            <div className="stat-label">Categories</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">7+</div>
+            <div className="stat-label">Languages</div>
+          </div>
         </div>
       </div>
     </section>

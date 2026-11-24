@@ -12,7 +12,7 @@ const NAV = [['/about', 'About'], ['/experience', 'Experience'], ['/projects', '
 function useTheme() {
   const [theme, setTheme] = useState(() => {
     try { const s = localStorage.getItem('theme'); if (s) return s; } catch (e) {}
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return 'dark';
   });
   useEffect(() => {
     document.documentElement.dataset.theme = theme;

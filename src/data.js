@@ -187,6 +187,13 @@ export const projects = [
     code: 'https://github.com/Aman-0402/gemini-watermark-remover',
   },
   {
+    title: 'LearnHub',
+    kind: 'Web app',
+    year: 'In development',
+    text: 'Course-selling platform for online and offline classes.',
+    stack: ['React', 'Django'],
+  },
+  {
     title: 'Blood Donation System',
     kind: 'Web app',
     year: 'In development',

@@ -6,6 +6,7 @@ import About from './pages/About';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import { ScrollBar } from './fx';
 
 const NAV = [['/about', 'About'], ['/experience', 'Experience'], ['/projects', 'Projects'], ['/contact', 'Contact']];
 
@@ -29,8 +30,10 @@ function ScrollTop() {
 
 function Shell() {
   const [theme, toggle] = useTheme();
+  const { pathname } = useLocation();
   return (
     <>
+      <ScrollBar />
       <header className="bar">
         <Link className="mark" to="/">AR</Link>
         <nav aria-label="Primary">
@@ -41,7 +44,7 @@ function Shell() {
         </button>
       </header>
       <ScrollTop />
-      <main>
+      <main key={pathname} className="page">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

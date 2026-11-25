@@ -10,16 +10,16 @@ export const profile = {
     twitter: 'https://twitter.com/Code_Like_Aman',
   },
   intro:
-    'I build web products end to end and teach others to do the same. Currently training students in AI and generative AI at CodedevH, and shipping full-stack projects on the side.',
+    "I'm a developer and trainer in Vadodara. I build web apps in React and Django, and since 2024 I've taught web development, Python and machine learning at universities and training companies. Right now I teach AI at Allenhouse.",
   about: [
-    'I work across React, Next.js, TypeScript, Django, Node.js and PostgreSQL, with real-time features, queues and AWS when a project needs them. My focus is increasingly AI/ML and generative AI.',
-    'Alongside building, I teach. I have trained thousands of students at universities and training companies, and I like turning hard topics into hands-on projects.',
-    'I also take freelance work: business websites, SaaS platforms and internal tools.',
+    'I grew up in Bokaro Steel City and studied computer science at Sambalpur University Institute of Information Technology, graduating in 2024.',
+    "Teaching is my main job. I've run courses in web development, Python, machine learning and networking for universities and training companies, and this year I started teaching AI to students at Allenhouse.",
+    'The rest of my time goes into building: exam software, a consultancy marketplace, websites for local businesses. It is mostly React or Next.js in front and Django or Node.js behind, with PostgreSQL and Redis where they are needed. Lately more of it is AI.',
   ],
   facts: [
-    ['3+ yrs', 'Teaching & mentoring'],
-    ['5', 'Training partners'],
-    ['1000+', 'Students mentored at one institute'],
+    ['3 yrs', 'teaching and mentoring'],
+    ['6', 'training partners'],
+    ['1000+', 'students mentored at Ethnotech'],
   ],
 };
 

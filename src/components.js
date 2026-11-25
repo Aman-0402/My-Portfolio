@@ -1,22 +1,28 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { profile } from './data';
+import { Reveal, tilt, untilt } from './fx';
 
 const FORM_ENDPOINT = process.env.REACT_APP_FORM_ENDPOINT;
 
-export function ProjectCard({ p }) {
-  return (
-    <article className="card">
+export function ProjectCard({ p, big = false, delay = 0 }) {
+  const body = (
+    <article className={`card tilt${big ? ' big' : ''}`} onPointerMove={tilt} onPointerLeave={untilt}>
       <div className="card-top"><span>{p.kind}</span><span>{p.year}</span></div>
       <h3>{p.title}</h3>
       <p>{p.text}</p>
-      <p className="stack">{p.stack.join(' · ')}</p>
+      <p className="stack-line">{p.stack.join(', ')}</p>
       <div className="card-links">
         {p.demo && <a href={p.demo} target="_blank" rel="noopener noreferrer">Visit ↗</a>}
         {p.code && <a href={p.code} target="_blank" rel="noopener noreferrer">Code ↗</a>}
       </div>
     </article>
   );
+  return big ? body : <Reveal className="rise" delay={delay}>{body}</Reveal>;
+}
+
+export function Label({ n, children }) {
+  return <h2 className="label"><span>{n}</span>{children}</h2>;
 }
 
 export function PageHead({ title, children }) {
